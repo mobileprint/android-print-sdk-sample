@@ -1,0 +1,54 @@
+<!--
+  ~ Hewlett-Packard Company
+  ~ All rights reserved.
+  ~
+  ~ This file, its contents, concepts, methods, behavior, and operation
+  ~ (collectively the "Software") are protected by trade secret, patent,
+  ~ and copyright laws. The use of the Software is governed by a license
+  ~ agreement. Disclosure of the Software to third parties, in any form,
+  ~ in whole or in part, is expressly prohibited except as authorized by
+  ~ the license agreement.
+  -->
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/sample_toolbar" />
+
+        <android.support.design.widget.TabLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:tabMaxWidth="0dp"
+            app:tabGravity="fill"
+            android:id="@+id/sample_tablayout"
+            app:tabBackground="@color/HPFontColorCarbonGrey"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/sample_viewpager"
+        android:background="@drawable/dark_gradient_bg"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:background="@android:color/holo_blue_light" />
+
+
+</android.support.design.widget.CoordinatorLayout>
+
